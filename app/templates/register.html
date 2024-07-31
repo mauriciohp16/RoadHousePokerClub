@@ -1,0 +1,81 @@
+{% extends "base.html" %}
+{% block content %}
+    <h2>Register</h2>
+    <form method="POST" action="">
+        {{ form.hidden_tag() }}
+        <div>
+            {{ form.username.label }}<br>
+            {{ form.username(size=32) }}<br>
+        </div>
+        <div>
+            {{ form.email.label }}<br>
+            {{ form.email(size=32) }}<br>
+        </div>
+        <div>
+            {{ form.confirm_email.label }}<br>
+            {{ form.confirm_email(size=32) }}<br>
+        </div>
+        <div>
+            {{ form.password.label }}<br>
+            {{ form.password(size=32) }}<br>
+        </div>
+        <div>
+            {{ form.confirm_password.label }}<br>
+            {{ form.confirm_password(size=32) }}<br>
+        </div>
+        <div>
+            {{ form.birth_date.label }}<br>
+            {{ form.birth_date() }}<br>
+        </div>
+        <div>
+            {{ form.phone.label }}<br>
+            {{ form.phone(size=32) }}<br>
+        </div>
+        <div>
+            {{ form.confirm_phone.label }}<br>
+            {{ form.confirm_phone(size=32) }}<br>
+        </div>
+        <div>
+            {{ form.cpf.label }}<br>
+            {{ form.cpf(size=32) }}<br>
+        </div>
+        <div>
+            {{ form.cep.label }}<br>
+            {{ form.cep(size=32) }}<br>
+        </div>
+        <div>
+            {{ form.address.label }}<br>
+            {{ form.address(size=32) }}<br>
+        </div>
+        <div>
+            {{ form.number.label }}<br>
+            {{ form.number(size=32) }}<br>
+        </div>
+        <div>
+            {{ form.complement.label }}<br>
+            {{ form.complement(size=32) }}<br>
+        </div>
+        <div>
+            {{ form.neighborhood.label }}<br>
+            {{ form.neighborhood(size=32) }}<br>
+        </div>
+        <div>
+            {{ form.city.label }}<br>
+            {{ form.city(size=32) }}<br>
+        </div>
+        <div>
+            {{ form.state.label }}<br>
+            {{ form.state(size=32) }}<br>
+        </div>
+        <div>
+            {{ form.country.label }}<br>
+            {{ form.country() }}<br>
+        </div>
+        <div>
+            {{ form.accept_terms() }} {{ form.accept_terms.label }}<br>
+        </div>
+        <div>
+            {{ form.submit() }}
+        </div>
+    </form>
+{% endblock %}
